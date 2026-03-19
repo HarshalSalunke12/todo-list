@@ -1,53 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px gray;
-  width: 300px;
+.todo-container {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-input[type="text"] {
-  width: 70%;
-  padding: 8px;
-  margin-bottom: 10px;
+header h1 { margin: 0; color: #333; }
+header p { color: #777; font-size: 0.9rem; }
+
+.input-section {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
 }
 
-button {
-  padding: 8px 12px;
-  background: green;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-left: 5px;
-  border-radius: 5px;
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    outline: none;
 }
+
+input:focus { border-color: #667eea; }
+
+#add-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul { list-style: none; padding: 0; margin-top: 20px; }
 
 li {
-  list-style-type: none;
-  padding: 6px;
-  border-bottom: 1px solid #ccc;
-  cursor: pointer;
+    background: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
 }
 
-.completed {
-  text-decoration: line-through;
-  color: gray;
-}
+li:hover { transform: translateX(5px); }
 
-li button {
-  float: right;
-  background: red;
-  color: white;
-  border: none;
-  padding: 2px 6px;
-  cursor: pointer;
-  border-radius: 3px;
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
