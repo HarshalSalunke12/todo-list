@@ -1,2 +1,2 @@
 # todo-list
-A basic To-Do List using HTML, CSS, JavaScript &amp; localStorage
+A modern Task Management application built with Vanilla JS. Features a responsive 'glassmorphism' UI and dynamic DOM manipulation for real-time task tracking
